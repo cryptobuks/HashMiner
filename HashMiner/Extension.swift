@@ -33,7 +33,6 @@ extension String {
         for byte in bytes {
             hexString += String(format:"%02x", UInt8(byte))
         }
-        
         return hexString
     }
 }

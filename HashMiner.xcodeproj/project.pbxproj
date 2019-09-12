@@ -58,11 +58,11 @@
 			children = (
 				C4161A032329457600D89F36 /* AppDelegate.swift */,
 				C4161A052329457600D89F36 /* ViewController.swift */,
+				C4737075232A5A7A00EE520E /* Extension.swift */,
 				C4161A072329457600D89F36 /* Main.storyboard */,
 				C4161A0A2329457600D89F36 /* Assets.xcassets */,
 				C4161A0C2329457600D89F36 /* LaunchScreen.storyboard */,
 				C4161A0F2329457600D89F36 /* Info.plist */,
-				C4737075232A5A7A00EE520E /* Extension.swift */,
 			);
 			path = HashMiner;
 			sourceTree = "<group>";
