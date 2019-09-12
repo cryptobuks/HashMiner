@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,14 +25,33 @@
                                     <action selector="startBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LbA-Xf-q0c"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DoubleSHA Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlJ-el-rZF">
+                                <rect key="frame" x="144.5" y="396" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hash Power" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb6-Ge-4IC">
+                                <rect key="frame" x="161.5" y="513" width="91.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="v0r-61-lMs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="24q-gj-VpP"/>
+                            <constraint firstItem="FlJ-el-rZF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CHy-ym-VMR"/>
+                            <constraint firstItem="vb6-Ge-4IC" firstAttribute="top" secondItem="v0r-61-lMs" secondAttribute="bottom" constant="50" id="CNd-jV-zVo"/>
                             <constraint firstItem="v0r-61-lMs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vv6-O1-4eh"/>
+                            <constraint firstItem="vb6-Ge-4IC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aUX-vM-C5W"/>
+                            <constraint firstItem="v0r-61-lMs" firstAttribute="top" secondItem="FlJ-el-rZF" secondAttribute="bottom" constant="16" id="i4S-f3-IBr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hashPowerLabel" destination="vb6-Ge-4IC" id="PiC-aJ-Ia3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
